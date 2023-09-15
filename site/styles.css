@@ -1,0 +1,20 @@
+header, footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    background-color: gainsboro;
+}
+
+img {
+    width: 20%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 5%;
+}
