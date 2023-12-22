@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Моя страница</title>
+        <link rel="stylesheet" href="../styles.css">
+
+        <script src="../js/theme.js" defer></script>
+
+        <script src="../js/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo_negative.png">
+                </a>
+            </div>
+            <nav>
+                <a class="text" href="../index.html">О себе</a>
+                <a class="text" href="../index.html#comps">Навыки</a>
+                <a class="text" href="cv.html">Резюме</a>
+                <a class="text" href="interests.html">Интересы</a>
+                <a class="text" href="contacts.html">Контакты</a>
+            </nav>
+            <button class="change-theme-button text"><p class="text">Тема</p></button>
+        </header>
+        <main>
+            <div class="vertical-flex">
+                <div class="horizontal-flex">
+                    <section class="vertical-flex">
+                        <h1 class="text">Социальные сети</h1>
+                        <a href="https://vk.com/agentwafer"><img class="creds" src="../images/icon-vk.png"></a>
+                    </section>
+                    <section class="vertical-flex">
+                        <h1 class="text">Электронная почта</h1>
+                        <address class="text">examplemail@randomail.com</address>
+                    </section>
+                    <section class="vertical-flex">
+                        <h1 class="text">Телефон</h1>
+                        <address class="text">0123456789</address>
+                    </section>
+                </div>
+            </div>
+            <section class="horizontal-flex">
+                <form class="vertical-flex" action="#" method="get" id="form">
+                    <div>
+                        <h3 class="text">ФИО:</h3>
+                        <input class="text" type="text" id="name" placeholder="Иванов Иван Иванович">
+                    </div>
+                    <div name="choice" id="meet" hidden>
+                        <h3 class="text">Дата встречи:</h3>
+                        <input class="text" name="choiceI" type="date" id="meetI">
+                    </div>
+                    <div name="choice" id="tel" hidden>
+                        <h3 class="text">Телефон:</h3>
+                        <input class="text" name="choiceI" type="tel" id="telI" placeholder="+79876543210">
+                    </div>
+                    <div name="choice" id="email" hidden>
+                        <h3 class="text">Электронная почта:</h3>
+                        <input class="text" name="choiceI" type="email" id="emailI" placeholder="examplemail@randomail.com">
+                    </div>
+                    <div name="choice" id="other" hidden>
+                        <h3 class="text">Ссылка:</h3>
+                        <input class="text" name="choiceI" type="text" id="otherI">
+                    </div>
+                    <div class="vertical-flex">
+                        <h2 class="text">Способ ответа</h3>
+                        <label class="text"><input type="radio" name="answer" id="meetB" value="встреча">Назначить встречу</label>
+                        <label class="text"><input type="radio" name="answer" id="telB" value="телефон">Телефон</label>
+                        <label class="text"><input type="radio" name="answer" id="emailB" value="почта">Электронная почта</label>
+                        <label class="text"><input type="radio" name="answer" id="otherB" value="другое">Другое</label>
+                        <label class="text"><input type="radio" name="answer" id="noneB" value="ничего" checked>Ответ не нужен</label>
+                    </div>
+                    <div class="horizontal-flex">
+                        <button type="submit" id="submit">Отправить</button>
+                        <button id="clear">Очистить форму</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <a href="https://vk.com/agentwafer">
+                <img src="../images/logo_negative.png">
+            </a>
+            <p class="text">Над сайтом работал Кирилл Ли</p>
+        </footer>
+    </body>
+</html>

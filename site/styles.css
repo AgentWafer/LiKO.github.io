@@ -1,20 +1,172 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
 header, footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    background-color: gainsboro;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-size: larger;
 }
 
-img {
-    width: 20%;
+header {
+    justify-content: flex-start;
 }
 
-ul {
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    min-height: 100vh;
+}
+
+footer {
+    justify-content: space-around;
+}
+
+.vertical-flex, .horizontal-flex {
+    display: flex;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.vertical-flex {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal-flex {
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.logo {
+    margin-right: 3vw;
+    width: 5vw;
+}
+
+.logo > a > img, footer > a > img {
+    width: 5vw;
+}
+
+nav > a {
+    margin-right: 1.5vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    align-self: center;
+    height: 250px;
+    width: 250px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+    background-size: cover;
+    background-image: url(images/ph.png);
+}
+
+.change-theme-button {
+    border: none;
+    background-color: transparent;
+}
+
+section {
+    margin-bottom: 2vh;
+
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 5px;
+
+    min-width: 20vw;
+    min-height: 25vh;
+}
+
+.alert-button {
+    align-self: center;
+}
+
+.block-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.highlighted {
+    background-color: gray;
+}
+
+td {
+    border-style: inset;
+    border-color: blue;
+}
+
+.creds {
+    max-width: 5vw;
+}
+
+.text {
+    text-decoration: none;
+}
+
+.task-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-form {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
-li {
-    margin-right: 5%;
+.divided {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30vw;
+    margin-right: 5vw;
+}
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.small-button {
+    max-width: max-content;
+    justify-self: center;
+}
+
+.timer {
+    font-size: xx-large;
 }

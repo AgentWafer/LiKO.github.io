@@ -4,59 +4,93 @@
         <meta charset="UTF-8">
         <title>Моя страница</title>
         <link rel="stylesheet" href="styles.css">
+
+        <script src="js/theme.js" defer></script>
+
+        <script src="js/alert.js" defer></script>
     </head>
     <body>
         <header>
-            <div><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_negative.png">
+                </a>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">О себе</a></li>
-                    <li><a href="index.html#comps">Навыки</a></li>
-                    <li><a href="pages/resume.html">Резюме</a></li>
-                    <li><a href="pages/interests.html">Интересы</a></li>
-                    <li><a href="pages/contacts.html">Контакты</a></li>
-                </ul>
+                <a class="text" href="index.html">О себе</a>
+                <a class="text" href="index.html#comps">Навыки</a>
+                <a class="text" href="pages/cv.html">Резюме</a>
+                <a class="text" href="pages/interests.html">Интересы</a>
+                <a class="text" href="pages/contacts.html">Контакты</a>
             </nav>
+            <button class="change-theme-button text"><p>Тема</p></button>
         </header>
-        <main>
-            <section>
-                <h1>Ли Кирилл Олегович</h1>
-                <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Pariatur nisi error delectus porro voluptates
-                        enim veniam assumenda dolores harum alias quis earum
-                        deserunt ipsum modi quas doloremque deleniti,
-                        dolorem atque.</p>
-                </div>
-                <img src="images/logo.png">
-            </section>
-            <section>
-                <h1>Навыки</h1>
-                <div>
-                    <img>
-                    <h6></h6>
+        <main class="vertical-flex">
+            <section class="horizontal-flex">
+                <img src="images/ph.png" width="200px">
+                <div class="vertical-flex">
+                    <h1 class="text">Ли Кирилл Олегович</h1>
+                    <p class="text">я устал, помогите</p>
                 </div>
             </section>
-            <section>
-                <div>
-                    <h5>Качества</h5>
-                    <ul>
-                        <li></li>
+            <a name="comps"></a>
+            <section class="vertical-flex">
+                <h1 class="text">Навыки</h1>
+                <div class="block-grid">
+                    <div class="divided">
+                        <img class="logo" src="images/ph.png">
+                        <h6 class="text">Текст</h6>
+                    </div>
+                    <div class="divided">
+                        <img class="logo" src="images/ph.png">
+                        <h6 class="text">Текст</h6>
+                    </div>
+                    <div class="divided">
+                        <img class="logo" src="images/ph.png">
+                        <h6 class="text">Текст</h6>
+                    </div>
+                    <div class="divided">
+                        <img class="logo" src="images/ph.png">
+                        <h6 class="text">Текст</h6>
+                    </div>
+                    <div class="divided">
+                        <img class="logo" src="images/ph.png">
+                        <h6 class="text">Текст</h6>
+                    </div>
+                </div>
+            </section>
+            <section class="horizontal-flex">
+                <div class="vertical-flex">
+                    <h1 class="text">Личностные качества</h5>
+                    <ul class="text">
+                        <li>Стрессоустойчивость</li>
+                        <li>Усидчивость</li>
+                        <li>Здравый смысл</li>
+                        <li>Толерантность</li>
                     </ul>
                 </div>
-
-                <h5>Цели</h5>
-                <ol>
-                    <li></li>
-                </ol>
+                <div class="vertical-flex">
+                    <h1 class="text">Цели в жизни</h5>
+                    <ol class="text">
+                        <li>Учиться</li>
+                        <li>Стать крутым специалистом</li>
+                        <li>Преисполниться</li>
+                    </ol>
+                </div>
             </section>
-            <section>
-                <h1>Важная информация</h1>
-                <button onclick="alert('надпись');">Кнопка</button>
+            <section class="horizontal-flex">
+                <div class="vertical-flex">
+                    <h1 class="text">Важная информация</h1>
+                    <p class="text">Нажмите кнопку справа для важной информации >>></p>
+                </div>
+                <button id="alert-button">Важная информация</button>
             </section>
         </main>
         <footer>
-            <a href="https://vk.com/agentwafer"><img src="images/logo.png"></a>
-            <p>Над сайтом работал Кирилл Ли</p>
+            <a href="https://vk.com/agentwafer">
+                <img src="images/logo_negative.png">
+            </a>
+            <p class="text">Над сайтом работал Кирилл Ли</p>
         </footer>
     </body>
 </html>

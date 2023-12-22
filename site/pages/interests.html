@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Моя страница</title>
+        <link rel="stylesheet" href="../styles.css">
+
+        <script src="../js/theme.js" defer></script>
+
+        <script src="../js/slider.js" defer></script>
+        <script src="../js/tasklist.js" defer></script>
+        <script src="../js/timer.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/logo_negative.png">
+                </a>
+            </div>
+            <nav>
+                <a class="text" href="../index.html">О себе</a>
+                <a class="text" href="../index.html#comps">Навыки</a>
+                <a class="text" href="cv.html">Резюме</a>
+                <a class="text" href="interests.html">Интересы</a>
+                <a class="text" href="contacts.html">Контакты</a>
+            </nav>
+            <button class="change-theme-button text"><p>Тема</p></button>
+        </header>
+        <main>
+            <section class="vertical-flex">
+                <div class="horizontal-flex">
+                    <div class="divided">
+                        <h1 class="text">Длинный текст</h1>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Molestiae odit deserunt unde doloribus laborum
+                            perspiciatis eaque quae beatae delectus optio? Odit
+                            doloribus at inventore iure commodi neque laborum
+                            doloremque maiores.</p>
+                    </div>
+                    <div class="slider"></div>
+                </div>
+            </section>
+            <section class="horizontal-flex">
+                <div class="tasks vertical-flex divided">
+                    <form class="task-form">
+                        <input id="new-task" required type="text"
+                            placeholder="Введите текст">
+                        <button type="submit">Добавить</button>
+                    </form>
+                    <ul class="task-ul text"></ul>
+                    <button id="clear-tasks" class="small-button">Очистить</button>
+                </div>
+                <div class="divided">
+                    <h1 class="text">Длинный текст</h1>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Molestiae odit deserunt unde doloribus laborum
+                        perspiciatis eaque quae beatae delectus optio? Odit
+                        doloribus at inventore iure commodi neque laborum
+                        doloremque maiores.</p>
+                </div>
+            </section>
+            <section class="horizontal-flex">
+                <div class="divided">
+                    <h1 class="text">Длинный текст</h1>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Molestiae odit deserunt unde doloribus laborum
+                        perspiciatis eaque quae beatae delectus optio? Odit
+                        doloribus at inventore iure commodi neque laborum
+                        doloremque maiores.</p>
+                </div>
+                <div class="vertical-flex">
+                    <div class="container">
+                        <button class="button button-uptime button-focus"
+                            id="uptime">Работа</button>
+                        <button class="button button-timeout"
+                            id="timeout">Перерыв</button>
+                        <button class="button button-downtime"
+                            id="downtime">Длинный перерыв</button>
+                    </div>
+                    <p class="text container timer" id="timer"></p>
+                    <div class="container">
+                        <button class="show" id="timerStart">Начать</button>
+                        <button id="timerStop">Пауза</button>
+                        <button class="hide" id="timerReset">Сброс</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="https://vk.com/agentwafer">
+                <img src="../images/logo_negative.png" style="width: 15vw;">
+            </a>
+            <p>Над сайтом работал Кирилл Ли</p>
+        </footer>
+    </body>
+</html>
